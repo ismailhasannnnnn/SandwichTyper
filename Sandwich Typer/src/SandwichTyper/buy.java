@@ -21,7 +21,7 @@ public class buy {
 			if(scanner.next().equals("y")){
 				money();
 			}else{
-				System.out.println("Well you're done for now!");
+				shop.shop();
 			}
 		
 		}
@@ -29,6 +29,8 @@ public class buy {
 	
 	
 	public static void money(){
+		Scanner in = new Scanner(System.in);
+		int amount = 40;
 		System.out.println("In this mode, you will be able to make money every second. It's pretty great. Let's get started!");
 		boolean afk = true;
 		while (afk == true){
