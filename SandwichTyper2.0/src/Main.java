@@ -1,6 +1,9 @@
+import java.beans.IntrospectionException;
 import java.util.Scanner;
 
-public class Main extends Shop{
+public class Main{
+	
+	 static Shop shop = new Shop();
 	
 	public static double money = 10;
 	public static int cookies = 10;
@@ -10,6 +13,11 @@ public class Main extends Shop{
 	}
 	
 	public static void main(String[] args){
+		Intro();
+	}
+	
+	public static void Intro(){
+		
 		Scanner scanner = new Scanner(System.in);
 		
 		//Introduction to the game.
@@ -30,7 +38,7 @@ public class Main extends Shop{
 		System.out.println("You will need to visit the shop in order to obtain the ingredients to make the sandwich.");
 		System.out.println("Would you like to visit the shop? (y/n)");
 			if(scanner.next().equals("y")){
-				
+				shop.shop();
 			}
 			if(scanner.next().equals("n")){
 				break;
@@ -43,5 +51,6 @@ public class Main extends Shop{
 		}
 		}
 	}
+	
 }
 
