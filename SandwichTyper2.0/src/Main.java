@@ -1,4 +1,3 @@
-import java.beans.IntrospectionException;
 import java.util.Scanner;
 
 public class Main{
